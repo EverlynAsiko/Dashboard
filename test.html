@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>DHIS Web Portal</title>
+
+<!-- Import ext js/css and plugin js -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="http://dhis2-cdn.org/v215/ext/resources/css/ext-plugin-gray.css" />
+<script src="//dhis2-cdn.org/v225-1/plugin/jquery-2.2.4.min.js"></script>
+<script src="//dhis2-cdn.org/v225-1/plugin/reporttable.js"></script>
+
+<!-- Custom CSS -->
+
+<style type="text/css">
+
+li {
+    float: left;
+}
+
+.pivottable {
+    margin: 30px;
+}
+
+</style>
+
+<!-- Login and initialize pivot tables -->
+
+<script>
+reportTablePlugin.url = 'https://test.hiskenya.org';
+reportTablePlugin.username = 'maseno';
+reportTablePlugin.password = 'Maseno2030';
+reportTablePlugin.loadingIndicator = true;
+
+var table1 = {id: 'C0rhAq1oklh', el: 'table1'};
+
+var table2 = {
+  "columns": [
+    {
+      "dimension": "dx",
+      "items": [
+        {
+          "id": "FnYCr2EAzWS"
+        }
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "dimension": "pe",
+      "items": [
+        {
+          "id": "LAST_12_MONTHS"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "dimension": "ou",
+      "items": [
+        {
+          "id": "ImspTQPwCqd",
+          "name": "Sierra Leone"
+        }
+      ]
+    }
+  ],
+  "el": "table2"
+};
+
+reportTablePlugin.load(table1, table2);
+
+</script>
+</head>
+
+<body>
+
+<header>
+  <h1>Pivot Table plugin</h1>
+</header>
+
+<menu>
+<p>
+<a href="http://dhis2.org">Home</a> |
+<a href="index.html">Portal</a> |
+<a href="table.html">Table</a> |
+<a href="chart.html">Chart</a> |
+<a href="map.html">Map</a>
+</p>
+
+<p>This page illustrates the use of the DHIS 2 Pivot Table plugin which can be used to embed dynamic charts into a web page. You can
+embed pivot tables pointing to pre-defined pivot tables or select custom indicators, periods and org units to create dynamic pivot tables. View the source of this page to see how it is done.</p>
+</menu>
+
+<section>
+
+<h3>Predefined pivot tables</h3>
+
+<div id="table1"></div>
+
+<h3>Custom pivot tables</h3>
+
+<div id="table2"></div>
+
+</section>
+
+</body>
+</html>

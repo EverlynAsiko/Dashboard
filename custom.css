@@ -1,0 +1,86 @@
+
+.red{
+    color:red;
+    }
+.form-area
+{
+    background-color: #FAFAFA;
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+    }
+
+    #chart {
+        margin: auto;
+        padding-left: 30%;
+    }
+
+    #head {
+        text-align: center;
+    }
+
+    #link {
+        font-size: 18px;
+        font-weight: bold;
+    }
+#footer {
+  bottom: 0;
+  width: 100%;
+  height: 350px;
+}
+
+.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+.footertext {
+  color: lightseagreen;
+  text-align: center;
+  font-size: 18px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.demopadding {
+    display: inline-block;
+}
+
+.fa {
+    display: inline-block;
+    margin: 6px;
+    color: lightseagreen;
+}
+
+.Title {
+    text-align: center;
+    color: darkcyan;
+}
+
+.foot {
+    color: black;
+}
+
+.text {
+    color: lightseagreen;
+}
+
+.footertext {
+    color: black;
+}
+
+#icon {
+    display: inline-block;
+    
+}
+
+
+
+
+

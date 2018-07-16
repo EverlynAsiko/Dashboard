@@ -1,0 +1,19 @@
+
+#welcome {
+    font-size: 18px;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+   
+}
+.panel {
+    border-color: #555;
+}
+.panel-footer {
+    text-align: center;
+}
+.icon {
+    vertical-align: center;
+    
+}
+

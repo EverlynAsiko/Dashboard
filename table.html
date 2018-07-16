@@ -1,0 +1,60 @@
+<html>
+    <head>
+    <script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://dhis2-cdn.org/v215/ext/ext-all.js"></script>
+    <script src="//dhis2-cdn.org/v226/plugin/reporttable.js"></script>
+    <script src="https://dhis2-cdn.org/v215/plugin/table.js"></script>
+    
+    </head>
+    
+    <body>
+    <div id="reportTable1"></div>
+    
+    <script>
+    
+    reportTablePlugin.url = "http://test.hiskenya.org";
+    reportTablePlugin.username = "maseno";
+    reportTablePlugin.password = "Maseno2030";
+    
+    reportTablePlugin.load([{
+      "columns": [
+        {
+          "dimension": "dx",
+          "items": [
+            {
+              "id": "lpGBKAhA11C",
+              "name": "Number of Children under 5 years attending Child Welfare Clinics for growth monitoring (new cases)"
+            }
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "dimension": "pe",
+          "items": [
+            {
+              "id": "LAST_12_MONTHS"
+            }
+          ]
+        }
+      ],
+      "filters": [
+        {
+          "dimension": "ou",
+          "items": [
+            {
+              "id": "HfVjCurKxh2",
+              "name": "Kenya"
+            }
+          ]
+        }
+      ],
+      "legendDisplayStyle": "FILL",
+      "url": "http://test.hiskenya.org",
+      "el": "reportTable1"
+    }]);
+    
+    </script>
+    
+    </body>
+    </html>
